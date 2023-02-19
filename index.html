@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bellas Hair</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="container__titulo">Bellas Hair, <br> seja bem vindo!</h1>
+    
+    <label for="filtrar-tabela">Filtre:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome da(o) cliente">
+       <table class="tabela">
+        <thead class="tabela__head">
+            <tr id="clientes--" class="tabela__head-clientes">
+                <th scope="col" class="clientes">Nome</th>
+                <th scope="col" class="clientes">Data</th>
+                <th scope="col" class="clientes">Serviço</th>
+                <th scope="col" class="clientes">Horário</th>
+            </tr>
+        </thead>
+        <tbody id="add-tabela" class="tabela__corpo">
+           <tr class="clientes__">
+            <td class="tabela__corpo-clientes-nome">Thais</td>
+            <td class="tabela__corpo-clientes">21/09/2023</td>
+            <td class="tabela__corpo-clientes">Escova</td>
+            <td class="tabela__corpo-clientes">10:00</td>
+           </tr>
+
+           <tr class="clientes__">
+            <td class="tabela__corpo-clientes-nome">Neide</td>
+            <td class="tabela__corpo-clientes">21/10/22</td>
+            <td class="tabela__corpo-clientes">Escova</td>
+            <td class="tabela__corpo-clientes">a</td>
+           </tr>
+
+           <tr class="clientes__">
+            <td class="tabela__corpo-clientes-nome">Luciana</td>
+            <td class="tabela__corpo-clientes">21/10/23</td>
+            <td class="tabela__corpo-clientes">Pintar</td>
+            <td class="tabela__corpo-clientes">10:30</td>
+           </tr>
+
+        </tbody>
+       </table>
+      
+    </section>
+    <section class="container--form" id="form--">
+        <form id="form" class="formStyle">
+            <ul id="mensagem-erro"></ul>
+        <label for="nome" class="descri__form">insira aqui o seu nome</label>
+        <input type="text" id="nome" name="nome" class="input" placeholder="Seu Nome Aqui">
+        <label for="data" class="descri__form">insira a data que deseja</label>
+        <input type="date"  id="data" name="data" class="input" placeholder="Insira aqui a data" >
+        <label for="semana" class="descri__form">insira o serviço que deseja</label>
+        <input type="text" id="semana" name="semana" class="input" placeholder="Insira seu serviço">
+        <label for="horario"  class="descri__form">insira o horario que deseja</label>
+        <input type="time" id="horario" name="horario" class="input" >
+    </form>
+        <button class="botao">Inserir</button>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/filtra.js"></script>
+    <script src="./js/remove.js"></script>
+</body>
+</html>
